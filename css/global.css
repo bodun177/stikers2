@@ -1,0 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=DotGothic16&display=swap");
+
+*,
+*::after,
+*::before {/*сюда параметри які не наслідуються, але цей варік гірший тим що він буде до кожного елемента стукати, оптимізація по пизді*/
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Робить так, щоб width/height включали padding і border */
+}
+
+:root {/*всі параметри тут наслідуються для всієї сторінки хтмл*/
+  scroll-behavior: smooth; /*плавний прокрут */
+  font-family: "DotGothic16", sans-serif;
+}
+
+img {
+  display: block; /*робить елемент блочним*/
+  max-width: 100%;
+}
